@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DINEAMITE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    .section-padding{
+      padding: 100px 0;
+    }
+    .carousel-item{
+      height: 100vh;
+      min-height: 300px;
+    }
+    .carousel-caption{
+      bottom: 220px;
+      z-index: 2;
+    }
+    .carousel-caption h5{
+      font-size: 40px;
+      text-decoration: uppercase;
+      letter-spacing: 2px;
+      margin-top: 20px;
+    }
+    .carousel-caption p{
+      width: 60%;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+    .carousel-inner::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+    }
+    .navbar-light .navbar-brand{
+      color: black;
+      font-size: 25px;      
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+
+    }
+    .w-100{
+    height: 100vh;      
+    }
+
+    @media only screen and (min-width:768px) and (max-width:991px){
+      .carousel-caption{
+        bottom: 370px;
+      }
+      .carousel-caption p{
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: 76px){
+      .navbar-nav{
+        text-align: center;
+      }
+      .carousel-caption{
+        bottom: 125px;
+      }
+      .carousel-caption h5{
+        padding: 17px;
+      }
+      .carousel-caption a{
+        padding: 10px 15px;
+      }
+      .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+      }
+    }
+    .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><b><img src="./food-logo.svg">DINE</b>amite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./asserts/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Reserve a table</a></li>
+              <li><a class="dropdown-item" href="#">Seach for restaurents</a></li>
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search a hotel" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+ 
+    <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" class="d-block w-100" alt="slide 1">
+        <div class="carousel-caption">
+          <h5>Search the best restaurants around you.</h5>
+          <p>Discover a vast array of handpicked restaurants, from hidden gems to Michelin-starred establishments, carefully curated to satisfy every palate.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slide-2.jpg" class="d-block w-100" alt="slide 2">
+        <div class="carousel-caption">
+          <h5>Reserve the table before anyone else!!</h5>
+          <p>Seamlessly navigate through our user-friendly interface to explore diverse cuisines, browse tantalizing menus, and make effortless reservations. Immerse yourself in a wealth of dining knowledge as our expert reviews and recommendations provide valuable insights. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slide-3.jpg" class="d-block w-100" alt="slide 3">
+        <div class="carousel-caption">
+          <h5>Experience the art of fine dining.</h5>
+          <p>Get ready to embark on a thrilling gastronomic journey and let your taste buds soar to new heights with Dineamite!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Why choose us?</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./images/file-cabinet.svg">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Unparalleled Selection.</h3>
+        <p>Dineamite offers an extensive selection of restaurants, ranging from local favorites to renowned international establishments. Our platform ensures that you have access to a diverse range of culinary options, allowing you to discover new flavors, cuisines, and dining experiences that cater to your preferences.</p>
+        <a href="./asserts/know1.html" class="icon-link">
+          Know more!
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./images/crown.svg">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Seamless Experience</h3>
+        <p>With Dineamite, the entire dining process becomes effortless. Our user-friendly interface allows you to effortlessly search for restaurants, explore menus, read reviews, and make reservations, all in one convenient place. We prioritize providing a smooth and intuitive experience so that you can focus on enjoying your dining adventure.</p>
+        <a href="./asserts/know1.html" class="icon-link">
+          Know more!
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./images/instruction.svg">
+          </div>
+            <h3 class="fs-2 text-body-emphasis">Personalization</h3>
+        <p>Dineamite understands that everyone has unique dining preferences. Our platform incorporates personalized recommendations based on your past interactions, favorite cuisines, and dining history. This ensures that you receive tailored suggestions, making each dining experience a reflection of your individual tastes and preferences.</p>
+        <a href="./asserts/know1.html" class="icon-link">
+          Know more!
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="./asserts/pricing.html" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="./asserts/about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 <img src="/dinamite/food-logo.svg"><b>DINE</b>amite, INC(A project by UmarGhure)</p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
